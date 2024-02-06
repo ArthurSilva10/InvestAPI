@@ -30,7 +30,7 @@ public class TransactionController
     }
 
     @PostMapping
-    public ResponseEntity<TransactionDTO> addUser(@RequestBody TransactionDTO dto)
+    public ResponseEntity<TransactionDTO> addTransaction(@RequestBody TransactionDTO dto)
     {
         TransactionDTO data = service.addTransaction(dto);
         return ResponseEntity.ok(data);
